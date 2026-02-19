@@ -12,6 +12,9 @@ Use this skill when users ask to set up or operate a planning workflow across ep
 - Creates/refines planning epics.
 - Breaks epics into small stories (target 3-5 points).
 - Enforces one-story-at-a-time implementation.
+- Initializes planning structure when requested:
+  - creates `todo/`, `archive/`, `blueprints/` (when missing and `allow_auto_create_dirs=true`)
+  - creates starter `SPECS.md` and planning `README.md` when missing
 - Enforces closure discipline:
   - story must be moved from `todo/` to `archive/<EPIC_ID>/`
   - implementation changes and moved story file must be committed together
@@ -38,14 +41,15 @@ For full config/validation details, read:
 
 ## Operating Procedure
 
-1. Refine epic in `todo/`.
-2. Generate ordered small stories in `todo/` and commit story creation.
-3. Implement one story.
-4. Mark story `done`, move it to `archive/<EPIC_ID>/`, commit code+move together. Respect `execution_mode`:
+1. Initialize planning structure when user asks to set up/initialize the workflow in a new project.
+2. Refine epic in `todo/`.
+3. Generate ordered small stories in `todo/` and commit story creation.
+4. Implement one story.
+5. Mark story `done`, move it to `archive/<EPIC_ID>/`, commit code+move together. Respect `execution_mode`:
    - `step_by_step`: wait for user confirmation before commit and before starting the next story.
    - `continuous`: commit closure atomically, then continue to the next story automatically.
-5. Repeat until all stories are closed.
-6. Mark epic `Done`, move epic to `archive/<EPIC_ID>/`, commit closure.
+6. Repeat until all stories are closed.
+7. Mark epic `Done`, move epic to `archive/<EPIC_ID>/`, commit closure.
 
 For details and examples, read:
 - `references/operation-playbook-v1.md`

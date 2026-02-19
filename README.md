@@ -38,11 +38,12 @@ Manual alternatives:
 
 ## Default Workflow
 
-1. Refine epic in `docs/planning/todo/`.
-2. Generate small stories (3-5 points).
-3. Implement one story at a time.
-4. Close story by moving `todo -> archive/<EPIC_ID>/` in same commit as changes.
-5. Close epic after all stories are archived.
+1. Initialize planning structure in new projects (`todo/`, `archive/`, `blueprints/`, `SPECS.md`, planning `README.md`).
+2. Refine epic in `docs/planning/todo/`.
+3. Generate small stories (3-5 points).
+4. Implement one story at a time.
+5. Close story by moving `todo -> archive/<EPIC_ID>/` in same commit as changes.
+6. Close epic after all stories are archived.
 
 ## Config Defaults
 

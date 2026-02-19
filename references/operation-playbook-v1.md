@@ -1,5 +1,11 @@
 # Operation Playbook v1
 
+## Project Initialization (New Repo)
+1. Resolve planning paths from config/defaults.
+2. If `allow_auto_create_dirs=true`, create missing planning directories: `todo`, `archive`, `blueprints`.
+3. Create missing starter files: `<specs_file>`, `<planning_readme_file>`.
+4. Confirm resulting structure before epic/story operations.
+
 ## Standard Flow
 1. Create/refine epic in `todo/`; commit epic refinement.
 2. Generate stories in `todo/`; commit story creation.

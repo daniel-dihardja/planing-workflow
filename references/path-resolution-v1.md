@@ -13,6 +13,11 @@ Missing-folder policy:
 - if `allow_auto_create_dirs=true`: create missing `todo`, `archive`, `blueprints`
 - if `allow_auto_create_dirs=false`: error with missing path list
 
+Missing-file bootstrap policy:
+- when initializing workflow in a new project, create missing starter files:
+  - `<specs_file>`
+  - `<planning_readme_file>`
+
 Deterministic archive targets:
 - story: `<archive_dir>/<EPIC_ID>/<story-filename>.md`
 - epic: `<archive_dir>/<EPIC_ID>/<epic-filename>.md`
