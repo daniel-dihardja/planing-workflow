@@ -11,17 +11,30 @@ Reusable Codex skill for structured epic/story planning in any repository.
 
 ## Install (Local Codex)
 
-Copy this folder to:
+Recommended:
+
+- Run `make install-skill` from this repository.
+
+This installs or updates the skill at:
 
 - `~/.codex/skills/planning-workflow/`
 
-Or keep this repo and symlink it to that location.
+Manual alternatives:
+
+- Copy this folder to `~/.codex/skills/planning-workflow/`, or
+- Keep this repo and symlink it to that location.
 
 ## Make Targets
 
 - `make install-skill` to install or update the skill at `~/.codex/skills/planning-workflow` with one command.
 - `make validate` to verify required skill files are present.
 - `make show-version` to print the current spec version from `VERSION.md`.
+
+## Update Workflow
+
+1. Update docs/spec files in this repo.
+2. Run `make validate`.
+3. Run `make install-skill` to deploy the latest version locally.
 
 ## Default Workflow
 
