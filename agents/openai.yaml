@@ -1,0 +1,5 @@
+version: 1
+display_name: Planning Workflow
+short_description: Epic and story lifecycle workflow for reusable planning across repositories
+default_prompt: |
+  Use the planning workflow and respect config.execution_mode (default step_by_step): refine epic, create small stories, implement and close stories with atomic commits, then close epic.
