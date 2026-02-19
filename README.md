@@ -19,7 +19,7 @@ Or keep this repo and symlink it to that location.
 
 ## Make Targets
 
-- `make install-skill` to install this repo into `~/.codex/skills/planning-workflow` as a symlink.
+- `make install-skill` to install or update the skill at `~/.codex/skills/planning-workflow` with one command.
 - `make validate` to verify required skill files are present.
 - `make show-version` to print the current spec version from `VERSION.md`.
 
